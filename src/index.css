@@ -1,0 +1,71 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/804/1001/146/white-pink-memory-begin-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.app{
+    display: flex;
+    justify-content: center;
+}
+header{
+    /* box-shadow: black -10px -10px 100px; */
+    display: flex;
+    width: 100%;
+}
+header img{
+    margin-right: auto;
+}
+.head--text{
+    margin: 15px;
+    font-weight: bold;
+}
+.Game--Title{
+    text-shadow:black 2px 2px 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    /* color: rgb(102, 148, 42); */
+    animation: colorChange 15s infinite;
+}
+
+.colors--container{
+    border-top:black solid 2px ;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.color--div{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: black solid 2px;
+    border-radius: 10px;
+    box-shadow: black 3px 5px 20px;
+    flex: 0 0 calc(25% - 20px); 
+    margin: 10px;
+}
+.Color--Name{
+    color: aliceblue;
+    text-shadow: black 2px 2px 5px;
+}
+.Level--Counter{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.Score--Counter{
+    text-align: center;
+    font-size:30px ;
+}
+.Difficulty{
+    text-align: center;
+    font-weight: 500;
+}
+@keyframes colorChange {
+    0% { color: rgb(102, 148, 42); }
+    25% { color: rgb(67, 67, 182); }
+    50% { color: rgb(128, 0, 126); }
+    75% { color: rgb(177, 12, 12); }
+    100% { color: orange; }
+  }
