@@ -67,8 +67,6 @@ export default function Game(props) {
     }
 
     setShuffledArray(shuffledColors);
-    console.log(levelColorsArray.sort());
-    console.log(choosedColors.sort());
   }
 
   function nextLevel() {
