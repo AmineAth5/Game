@@ -15,6 +15,9 @@ export default function Game(props) {
     }
     return array;
   };
+  useEffect(()=>{
+    alert("How the game works? : In each level you have different colors. You have to click on all the colors in the level. Be careful, they change places as soon as you click on the color. The higher the level, the greater the number of colors and the greater the similarity between them. Good luck! ")
+  },[])
   useEffect(() => {
     nextLevel();
   }, [highScore]);
